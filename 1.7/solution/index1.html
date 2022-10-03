@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Begrüssen</title>
+    <script type="text/javascript">
+
+      const name = prompt("Name?");
+      const current_hour = new Date().getHours();
+
+      if (current_hour < 5) {
+        alert(`Guten Nacht ${name}`);
+      } else if (current_hour < 12) {
+        alert(`Guten Morgen ${name}`);
+      } else if (current_hour < 18) {
+        alert(`Guten Tag ${name}`);
+      } else if (current_hour < 22) {
+        alert(`Guten Abend ${name}`);
+      } else {
+        alert(`Guten Nacht ${name}`);
+      }
+
+    </script>
+  </head>
+
+  <body>
+
+  </body>
+
+</html>
