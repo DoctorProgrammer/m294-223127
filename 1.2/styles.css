@@ -1,0 +1,27 @@
+body {
+    background-color: #1ED760;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+h1 {
+    color: #FFFFFF;
+  }
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+.album_pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.album_pictures img {
+    width: 1200%;
+  }
