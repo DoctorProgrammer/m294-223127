@@ -22,5 +22,23 @@ console.log(array.length);
 console.log(array);
 console.log(wordlist)
 
-alert(array.pop());
+console.log(array.pop());
 console.log(array);
+
+//mutabel addition of element
+array.push("secondLast", "last");
+array.unshift("first", "secondFirst");
+
+console.log(array);
+
+//immutable addition of element
+const newarray = [...array, "item"];
+console.log(newarray);
+
+//immutable map to power 2 of the number
+const numbers = [1, 2, 3, 4, 5];
+const numbersPower2 = numbers.map((number) => Math.pow(number,2));
+console.log(numbersPower2);
+
+const oddNumbers = numbers.filter((number) => number % 2 != 0);
+console.log(oddNumbers);

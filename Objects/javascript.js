@@ -7,4 +7,10 @@ function createUser(name, age, gender) {
 }
 
 let user = createUser("Robin", 18, "männlich");
-alert(user.gender)
+console.log(user.gender);
+
+let fruit = "apple";
+let user1 = {
+    [fruit + "Computer"]: 5
+}
+console.log(user1);
