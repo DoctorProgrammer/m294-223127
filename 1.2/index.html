@@ -5,6 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Spoofify</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // with class
+                const namenClass = document.getElementsByClassName('head2')[0];
+                namenClass.innerText = "Class";
+                // with id
+                const namenId = document.querySelector('#head2');
+                namenId.innerText = "ID";
+
+                const trackName = document.querySelector('#trackName');
+                trackName.innerHTML = "<p>gagi<p/>";
+                
+                
+            })
+        </script>
     </head>
 
     <body>
@@ -68,9 +83,9 @@
 
             <h1>Albums</h1>
             <article id="album_1">
-                <h2>The Beatles - Help!</h2>
+                <h2 class="head2">The Beatles - Help!</h2>
                 <ol>
-                <li>Help (2:18)</li>
+                <li id="trackName">Help (2:18)</li>
                 <li>The Night Before (2:34)</li>
                 <li>You've got to hide your love away (2:09)</li>
                 <li>I need you (2:28)</li>
@@ -80,7 +95,7 @@
                 </ol>
             </article>
             <article id="album_2">
-                <h2>Nirvana - Nevermind</h2>
+                <h2 id="head2">Nirvana - Nevermind</h2>
                 <ol>
                 <li>Smells Like Teen Spirit (5:01)</li>
                 <li>In Bloom (Nevermind Version) (4:14)</li>
